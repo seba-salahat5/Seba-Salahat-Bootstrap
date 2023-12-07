@@ -16,20 +16,54 @@
 
 <body>
     <nav class="navbar sticky-top bg-light">
-        <div class="container-fluid px-5 py-3">
+        <div class="container-fluid px-5 py-1">
             <span class="navbar-brand mb-0 h1">Web Topics</span>
             <span class="d-flex">
-                <button class="btn btn-outline-primary" type="button">
+                <button class="btn btn-outline-primary bg-light" type="button">
                     <i class="bi bi-moon"></i>
-                    Dark Mode
+                    <span class="d-none d-sm-inline">Dark Mode</span>
                 </button>
-                <button class="btn btn-outline-primary" type="button">
+                <button class="btn btn-outline-primary bg-light" type="button">
                     <i class="bi bi-heart"></i>
-                    Favourites
+                    <span class="d-none d-sm-inline">Favourites</span>
                 </button>
             </span>
         </div>
     </nav>
+    <div class="container-fluid heading-container d-flex justify-content-center bg-light">
+        <div class="heading-triangle heading-triangle-right"></div>
+        <div class="heading-triangle heading-triangle-left"></div>
+        <div class="heading-text">
+            <h2>Welcome to our website!</h2>
+            <p>We have a new design that's fresh, modern, and easy to use.</p>
+        </div>
+    </div>
+    <main class="container-fluid bg-body px-5">
+        <div class="main-line row shadow-sm">
+            <div class="col-sm-8">
+                <div class="input-group">
+                    <span class="input-group-text bg-light" id="inputGroup-sizing-default"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control py-3 bg-light" placeholder="Search the website..." aria-label="Search input" aria-describedby="search-input">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="form-floating col-6">
+                        <select class="form-select bg-light" id="sortingSelect" aria-label="Sorting dropdown">
+                          <option selected>Default</option>
+                        </select>
+                        <label for="sortingSelect">Sort by:</label>
+                    </div>
+                    <div class="form-floating col-6">
+                        <select class="form-select bg-light" id="filteringSelect" aria-label="Filtering dropdown">
+                          <option selected>Default</option>
+                        </select>
+                        <label for="filteringSelect">Filter by:</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
