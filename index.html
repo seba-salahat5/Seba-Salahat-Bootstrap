@@ -19,11 +19,11 @@
         <div class="container-fluid px-5 py-1">
             <span class="navbar-brand mb-0 h1">Web Topics</span>
             <span class="d-flex">
-                <button class="btn btn-outline-primary bg-light" type="button">
+                <button class="btn btn-outline-primary bg-light text-body" type="button">
                     <i class="bi bi-moon"></i>
                     <span class="d-none d-sm-inline">Dark Mode</span>
                 </button>
-                <button class="btn btn-outline-primary bg-light" type="button">
+                <button class="btn btn-outline-primary bg-light text-body" type="button">
                     <i class="bi bi-heart"></i>
                     <span class="d-none d-sm-inline">Favourites</span>
                 </button>
@@ -39,30 +39,857 @@
         </div>
     </div>
     <main class="container-fluid bg-body px-5">
-        <div class="main-line row shadow-sm">
+        <div class="main-line row shadow-sm mt-3">
             <div class="col-sm-8">
                 <div class="input-group">
-                    <span class="input-group-text bg-light" id="inputGroup-sizing-default"><i class="bi bi-search"></i></span>
-                    <input type="text" class="form-control py-3 bg-light" placeholder="Search the website..." aria-label="Search input" aria-describedby="search-input">
+                    <span class="input-group-text bg-light border border-end-0" id="inputGroup-sizing-default"><i
+                            class="bi bi-search"></i></span>
+                    <input type="text" class="form-control py-3 bg-light border border-start-0"
+                        placeholder="Search the website..." aria-label="Search input" aria-describedby="search-input">
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="row">
                     <div class="form-floating col-6">
                         <select class="form-select bg-light" id="sortingSelect" aria-label="Sorting dropdown">
-                          <option selected>Default</option>
+                            <option selected>Default</option>
                         </select>
                         <label for="sortingSelect">Sort by:</label>
                     </div>
                     <div class="form-floating col-6">
                         <select class="form-select bg-light" id="filteringSelect" aria-label="Filtering dropdown">
-                          <option selected>Default</option>
+                            <option selected>Default</option>
                         </select>
                         <label for="filteringSelect">Filter by:</label>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container-fluid mt-4">
+            <h3><strong>"24" Web Topics Found</strong></h3>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 row-cols-xxxl-6">
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\html.png" class="card-img-top" alt="HTML">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Languages</h4>
+                            <h5 class="card-title card-text text-body">HTML</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Sarah Smith</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\css.webp" class="card-img-top" alt="CSS">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Languages</h4>
+                            <h5 class="card-title card-text text-body">CSS</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: David Lee</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\javascript.jpg" class="card-img-top" alt="JavaScript">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Languages</h4>
+                            <h5 class="card-title card-text text-body">JavaScript</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Emily Chen</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\jquery.png" class="card-img-top" alt="jQuery">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Frontend Frameworks and Libraries</h4>
+                            <h5 class="card-title card-text text-body">jQuery</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: John Johnson</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\angular.png" class="card-img-top" alt="Angular">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Frontend Frameworks and Libraries</h4>
+                            <h5 class="card-title card-text text-body">Angular</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Jessica Davis</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\react.webp" class="card-img-top" alt="React">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Frontend Frameworks and Libraries</h4>
+                            <h5 class="card-title card-text text-body">React</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Daniel Brown</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\vuejs.jpeg" class="card-img-top" alt="Vue.js">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Frontend Frameworks and Libraries</h4>
+                            <h5 class="card-title card-text text-body">Vue.js</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Ava Jones</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\nodejs.webp" class="card-img-top" alt="Node.js">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Backend Frameworks and Libraries</h4>
+                            <h5 class="card-title card-text text-body">Node.js</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Michael Kim</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\expressjs.webp" class="card-img-top" alt="Express.js">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Backend Frameworks and Libraries</h4>
+                            <h5 class="card-title card-text text-body">Express.js</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Sophia Rodriguez</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\ruby.jpeg" class="card-img-top" alt="Ruby On Rails">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Backend Frameworks and Libraries</h4>
+                            <h5 class="card-title card-text text-body">Ruby On Rails</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: William Lee</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\django.jpeg" class="card-img-top" alt="Django">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Backend Frameworks and Libraries</h4>
+                            <h5 class="card-title card-text text-body">Django</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Olivia Martinez</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\flask.webp" class="card-img-top" alt="Flask">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Backend Frameworks and Libraries</h4>
+                            <h5 class="card-title card-text text-body">Flask</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Ethan Thompson</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\sql.png" class="card-img-top" alt="SQL">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Databases and APIs</h4>
+                            <h5 class="card-title card-text text-body">SQL</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Madison Davis</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\nosql.png" class="card-img-top" alt="NoSQL">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Databases and APIs</h4>
+                            <h5 class="card-title card-text text-body">NoSQL</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Isabella Wilson</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\restapi.jpeg" class="card-img-top" alt="Rest APIs">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Databases and APIs</h4>
+                            <h5 class="card-title card-text text-body">Rest APIs</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Jacob Garcia</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\graphql.png" class="card-img-top" alt="GraphQl">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Databases and APIs</h4>
+                            <h5 class="card-title card-text text-body">GraphQl</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Mia Brown</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\oauth.png" class="card-img-top" alt="OAuth">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">OAuth</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Evelyn Nguyen</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\json.png" class="card-img-top" alt="JSON">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">JSON</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Liam Hernandez</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\ajax.gif" class="card-img-top" alt="AJAX">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">AJAX</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Avery Perez</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="aassets\Logos\websockets.png" class="card-img-top" alt="Websockets">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Websockets</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Victoria Kim</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\responsive.gif" class="card-img-top" alt="Responsive Design">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Responsive Design</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Ryan Jones</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\accessibility.png" class="card-img-top" alt="Accessibility">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Accessibility</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Samantha Martin</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\ux.jpeg" class="card-img-top" alt="User Experience (UX)">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">User Experience (UX)</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Luke Davis</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\ui.png" class="card-img-top" alt="User Interface (UI)">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">User Interface (UI)</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Grace Wilson</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\design-systems.jpeg" class="card-img-top" alt="Design Systems">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Design Systems</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Noah Martinez</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\performance.png" class="card-img-top" alt="Performance Optimization">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Performance Optimization</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Chloe Taylor</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\cross-browser.jpeg" class="card-img-top" alt="Cross-Browser Compatibility">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Cross-Browser Compatibility</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: David Lee</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\seo.jpeg" class="card-img-top" alt="Search Engine Optimization (SEO)">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Search Engine Optimization (SEO)</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Emily Kim</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\web-security.jpeg" class="card-img-top" alt="Web Security">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Web Security</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Gabriel Hernandez</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\testing.jpeg" class="card-img-top" alt="Testing and Debugging">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Testing and Debugging</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Avery Perez</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\ci-cd.jpeg" class="card-img-top" alt="Continuous Integration/Continuous Integration">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Continuous Integration/Continuous Integration</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Madison Davis</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\devops.png" class="card-img-top" alt="DevOps">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">DevOps</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Isabella Wilson</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\cloud.jpeg" class="card-img-top" alt="Cloud Computing">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Cloud Computing</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Jacob Garcia</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\docker.png" class="card-img-top" alt="Docker">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Docker</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Mia Brown</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\microservices.png" class="card-img-top" alt="Microservices">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Microservices</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Evelyn Nguyen</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\pwa.png" class="card-img-top" alt="Progressive Web Apps (PWA)">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Progressive Web Apps (PWA)</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Liam Hernandez</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\wai.jpeg" class="card-img-top" alt="Web Accessibility Initiative (WAI)">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Web Accessibility Initiative (WAI)</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Avery Perez</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\cms.png" class="card-img-top" alt="Content Management Systems (CMS)">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Content Management Systems (CMS)</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Victoria Kim</6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="assets\Logos\analytics.png" class="card-img-top" alt="Web Analytics">
+                        <div class="card-body">
+                            <h4 class="card-subtitle card-text mb-2 text-body">Web Development Concepts and Techniques</h4>
+                            <h5 class="card-title card-text text-body">Web Analytics</h5>
+                            <div class="container mt-4 mb-3 px-0">
+                                <div class="form-group">
+                                    <div class="star-rating" id="ratingStars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="card-text opacity-75">Author: Ryan Jones</6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 
